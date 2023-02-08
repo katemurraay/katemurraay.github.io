@@ -2,7 +2,9 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <title>Slider</title>
 </head>
 <body>
@@ -117,11 +119,10 @@
             </div><!-- end row -->			
         </div><!-- end container -->
     </div><!-- end section -->
-  
-	<script>
-      
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
+	<script src = 'js/swiper.min.js'></script>
+      
+  <script>
   const swiper = new Swiper('.swiper-container', {
 			loop: true,
 			effect: 'coverflow',
