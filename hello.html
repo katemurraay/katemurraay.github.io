@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/swiper.min.css">
     <title>Slider</title>
 </head>
 <body>
@@ -117,9 +117,12 @@
             </div><!-- end row -->			
         </div><!-- end container -->
     </div><!-- end section -->
-    <script src="js/swiper.min.js"></script>
+  
 	<script>
-		var swiper = new Swiper('.swiper-container', {
+      
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper('.swiper-container', {
 			loop: true,
 			effect: 'coverflow',
 			centeredSlides: true,
@@ -156,7 +159,7 @@
                 }
             }
 		});
-	  </script>
-
+</script>
+	
 </body>
 
