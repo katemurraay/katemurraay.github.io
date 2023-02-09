@@ -1,14 +1,93 @@
 <!-- index.html-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Am I HTML already?</title>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!--Carousel CSS-->
+  <link rel ='stylesheet' href="css/carousel.css">
+  <link rel ='stylesheet' href="css/main.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  
+  <title>Kate Murray</title>
 </head>
-<body>
-    <h1> Portfolio</h1>
+
+<body class="app_version" data-spy="scroll" data-target="#navbarApp" data-offset="98">
+
+
+  <header class="header header_style_01">
+    <nav class="navbar header-nav navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarApp"
+          aria-controls="navbarApp" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarApp">
+          <ul class="navbar-nav">
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="home">
+  <h1>Home</h1>
+  </div>
+  <div id="about">
+    <h1>About</h1>
+  </div>
+  <div id="projects">
+            <!--Android Projects-->
+        <!--Project 1-->
+        <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png"></div>
+  <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png"></div>
+  <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png"></div>
+  <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png"></div>
+  <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png"></div>
+</div>
+    <br>
+  </div>
+  <div id="contact">
+    
+  
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-6 item text">
+                        <h2>Kate Murray</h2>
+                         <div class="col item social"><a href="https://www.linkedin.com/in/kate-murray-343138151/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/katemurraay"><i class="icon ion-social-github"></i></a><a href="mailto: katem.murray1998@gmail.com"><i class="icon ion-email"></i></a> </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                   
+                
+            </div>
+        </footer>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
