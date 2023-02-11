@@ -1,24 +1,24 @@
 
 import Project from './project.js'
-
+import User from './user.js'
 window.onload = function(){
-    var email = "mailto: katem.murray1998@gmail.com";
-    var linkedin = "https://www.linkedin.com/in/kate-murray-343138151/";
-    var github = "https://github.com/katemurraay";
+
     
+    let kateM = new User('Kate Murray', 'Mobile Developer', 'katem.murray1998@gmail.com', 'https://www.linkedin.com/in/kate-murray-343138151/', 'https://github.com/katemurraay' )
+    var email = "mailto: " + kateM.email;
     document.getElementById('header_email').href = email;
-    document.getElementById('header_linkedin').href = linkedin;
-    document.getElementById('header_github').href = github;
+    document.getElementById('header_linkedin').href = kateM.linkedin;
+    document.getElementById('header_github').href = kateM.github;
     document.getElementById('footer_email').href = email;
-    document.getElementById('footer_linkedin').href = linkedin;
-    document.getElementById('footer_github').href = github;
+    document.getElementById('footer_linkedin').href = kateM.linkedin;
+    document.getElementById('footer_github').href = kateM.github;
     let projects = populateProjects();
     showImages(projects);
 };
 
 function populateProjects(){
   let project1 = new Project('Name of Project', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://www.github.com');
-  let project2 = new Project('Name of Project', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', '');
+  let project2 = new Project('Name of Project', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
 
   let allProjects = [project1, project2];
   
