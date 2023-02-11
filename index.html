@@ -4,6 +4,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/responsive.css">
   <!--Carousel CSS-->
@@ -23,11 +26,14 @@
 
   <!--Content before waves-->
 <div class="inner-header flex">
-
+<div class ="container">
+  <div class="row">
 <h1>Kate Murray </h1>
-  <br/>
-  <div class="col item social"><a class="linkedin" aria-label="LinkedIn"><i class="icon ion-social-linkedin"></i></a><a class="github" aria-label="GitHub"><i class="icon ion-social-github"></i></a><a class="email" aria-label="Email"><i class="icon ion-email"></i></a> </div>
-
+  </div>
+  <div class = "row">
+  <div class="col item social"><a id="header_linkedin" aria-label="LinkedIn"><i class="icon ion-social-linkedin"></i></a><a id="header_github" aria-label="GitHub"><i class="icon ion-social-github"></i></a><a id="header_email" aria-label="Email"><i class="icon ion-email"></i></a> </div>
+  </div>
+</div>
 </div>
   <!--Waves Container-->
 <div>
@@ -36,9 +42,9 @@
 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
 </defs>
 <g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" /> 
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" /> 
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" /> </use>
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" /> </use>
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" /></use>
 <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"/>
 </g>
 </svg>
@@ -51,7 +57,7 @@
 
 
 
-  <!-- HOME -->
+  <!-- ABOUT -->
   
   <div id="about">
     <h1>About</h1>
@@ -66,6 +72,7 @@
       </div>
     </div>
   </div>
+  <hr>
   <div id="projects">
     <h1> Recent Projects</h1>
             <!--Android Projects-->
@@ -85,13 +92,21 @@
     <div class="col">
       <h3> Name of Project </h3>
       <p>  Information about it</p>
+       <button class ="source-code" onclick="window.location.href='https://w3docs.com';">
+      Source Code
+    </button>
     </div>
   </div>
       <br>
+      <hr>
         <div class="row">
           <div class="col">
       <h3> Name of Project </h3>
       <p>  Information about it</p>
+         <button class ="source-code" onclick="window.location.href='https://w3docs.com';">
+      Source Code
+    </button>
+   
     </div>
     <div class="col-6">
       <div class="carousel"
@@ -118,7 +133,7 @@
                 <div class="row">
                    <div class="col-md-6 item text">
                         <h2>Kate Murray</h2>
-                         <div class="col item social"><a class="linkedin" aria-label="LinkedIn"><i class="icon ion-social-linkedin"></i></a><a class="github" aria-label="GitHub"><i class="icon ion-social-github"></i></a><a class="email" aria-label="Email"><i class="icon ion-email"></i></a> </div>
+                         <div class="col item social"><a id="footer_linkedin" aria-label="LinkedIn"><i class="icon ion-social-linkedin"></i></a><a id="footer_github" aria-label="GitHub"><i class="icon ion-social-github"></i></a><a id="footer_email" aria-label="Email"><i class="icon ion-email"></i></a> </div>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         
