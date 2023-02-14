@@ -20,12 +20,14 @@ window.onload = function(){
 };
 
 function populateProjects(){
-  let android_project1 = new Project('Manchester United App', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
-  let android_project2 = new Project('Timer App', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
-  let android_project3 = new Project('The Vegan Checker App', ['../images/project_03/1.gif', '../images/project_02/2.png','../images/project_03/3.png', '../images/project_03/4.png', '../images/project_03/5.png', '../images/project_03/6.png', '../images/project_03/7.png'], 'Information about Project', 'https://github.com/katemurraay/VeganCheckerApp');
+  let android_project1 = new Project('Manchester United Android App', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
+  let android_project2 = new Project('Timer Android App', ['../images/project_02/1.png', '../images/project_02/2.png', '../images/project_02/3.png'], 'Information about Project', 'https://github.com/katemurraay');
+  let android_project3 = new Project('The Vegan Checker Android App', ['../images/project_03/1.gif', '../images/project_03/2.png','../images/project_03/3.png', '../images/project_03/4.png', '../images/project_03/5.png', '../images/project_03/6.png', '../images/project_03/7.png'], 'Provides information regarding the vegan validity of food and alcohol products. <br> <b> Technical Components of the Project: </b> <br> <ul> \
+  <li>Integrates with Externally Hosted AWS Database</li> <li>Barcode Scanning Library</li> <li>Applies Google ML Kit Translate translator</li> </ul>', 'https://github.com/katemurraay/VeganCheckerApp');
+  let android_project4 = new Project('Covid Hero Android App', ['../images/project_03/1.gif', '../images/project_02/2.png','../images/project_03/3.png', '../images/project_03/4.png', '../images/project_03/5.png', '../images/project_03/6.png', '../images/project_03/7.png'], 'Provides information regarding the vegan validity of food and alcohol products. <br> <b> Technical Components of the Project: </b> <br> <ul> \
+  <li>Integrates with Externally Hosted AWS Database</li> <li>Barcode Scanning Library</li> <li>Applies Google ML Kit Translate translator</li> </ul>', 'https://github.com/katemurraay/VeganCheckerApp');
   
-  let ios_project1 = new Project('Manchester United App', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
-  let ios_project2 = new Project('Timer App', ['https://i.ibb.co/BGqc6sY/completed-no-frame-2.png', 'https://i.ibb.co/BGqc6sY/completed-no-frame-2.png'], 'Information about Project', 'https://github.com/katemurraay');
+  let ios_project1 = new Project('Manchester United iOS App', ['../images/project_04/1.png', '../images/project_04/2.png', '../images/project_04/3.png',  '../images/project_04/4.png',  '../images/project_04/5.png',  '../images/project_04/6.png',  '../images/project_04/7.png'], 'Information about Project', 'https://github.com/katemurraay/Cs6317_Assignment2');
   
   let allProjects = [android_project1, android_project2, android_project3];
   
