@@ -12,7 +12,7 @@
   <!--Carousel CSS-->
   <link rel='stylesheet' href="css/carousel.css">
   <link rel='stylesheet' href="css/main.css">
-
+  <!--External CSS-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -21,11 +21,11 @@
 </head>
 
 <body class="app_version" data-spy="scroll" data-target="#navbarApp" data-offset="98">
-
+ <noscript aria-label="Javascript Disabled"> You need to enable JavaScript to run this app. </noscript>
   <!--HEADER-->
   <div class="header" id="home">
 
-    <!--Content before waves-->
+   
     <div class="inner-header flex">
       <div class="container">
         <div class="row">
@@ -34,15 +34,15 @@
         <div class="row">
           <h2 class="subtitle">Mobile Developer</h2>
         </div>
-        <div class="row">
-          <div class="col item social"><a id="header_linkedin" aria-label="LinkedIn"><i
-                class="icon ion-social-linkedin"></i></a><a id="header_github" aria-label="GitHub"><i
-                class="icon ion-social-github"></i></a><a id="header_email" aria-label="Email"><i
+        <div class="row" id="header_social_row">
+          <div class="col item social"><a id="header_linkedin" aria-label="LinkedIn" aria-hidden="false"><i
+                class="icon ion-social-linkedin"></i></a><a id="header_github" aria-label="GitHub" aria-hidden="false"><i
+                class="icon ion-social-github"></i></a><a id="header_email" aria-label="Email" aria-hidden="false"><i
                 class="icon ion-email"></i></a> </div>
         </div>
       </div>
     </div>
-    <!--Waves Container-->
+    <!--WAVES-->
     <div>
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -51,11 +51,11 @@
         </defs>
         <g class="parallax">
           <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-          </use>
+       
           <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-          </use>
+          
           <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          </use>
+         
           <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
         </g>
       </svg>
@@ -64,7 +64,7 @@
 
 
 
-  <!--Waves end-->
+
 
 
 
@@ -75,11 +75,7 @@
       <div class="row">
         <h1>About</h1>
       </div>
-      <div class="row">
-
-        <img src="https://www.qries.com/images/banner_logo.png" class="about" />
-
-      </div>
+     
       <div class="row">
         <h2>Hello! I am Kate Murray.</h2>
         <p id="bio"></p>
@@ -104,56 +100,117 @@
       <!--Project 1-->
 
       <div class="row">
-        <div class="col-8">
+        <div class="col-6">
           <div class="carousel" data-flickity='{ "wrapAround": true }'>
             <div class="carousel-cell"><img class="screen" id="proj_0_img_0"></div>
             <div class="carousel-cell"><img class="screen" id="proj_0_img_1"></div>
 <div class="carousel-cell"><img class="screen" id="proj_0_img_2"></div>
-            <div class="carousel-cell"><img class="screen" id="proj_0_img_3"></div>
-            <div class="carousel-cell"><img class="screen" id="proj_0_img_4"></div>
-            <div class="carousel-cell"><img class="screen" id="proj_0_img_5"></div>
-            <div class="carousel-cell"><img class="screen" id="proj_0_img_6"></div>
+
           </div>
         </div>
         <div class="col">
-          <h3 id='proj_0_name'></h3>
+          <h2 id='proj_0_name' class="project_name"></h3>
           <p id='proj_0_detail'> Information about it</p>
-          <button class="source-code" id="proj_0_url">
-            Source Code
-          </button>
+            <h3 class='proj_dev'>Technical Components of the App: </h4>
+          <p id='proj_0_dev'></p>
+          <div class='source'>
+            <button class="source-code" id="proj_0_url">
+              Source Code
+            </button>
+            </div>
         </div>
       </div>
       <br>
       <hr>
+      <!--Project 2-->
       <div class="row">
         <div class="col">
-          <h3> Name of Project </h3>
-          <p> Information about it</p>
-          <button class="source-code" onclick="window.location.href='https://w3docs.com';">
+            <h2 id='proj_1_name' class="project_name"></h3>
+          <p id='proj_1_detail'> Information about it</p>
+          <h3 class='proj_dev'>Technical Components of the App: </h4>
+          <p id='proj_1_dev'></p>
+          <div class='source'>
+          <button class="source-code" id="proj_1_url">
             Source Code
           </button>
-
+          </div>
         </div>
         <div class="col-6">
           <div class="carousel" data-flickity='{ "wrapAround": true }'>
-            <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png">
-            </div>
-            <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png">
-            </div>
-            <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png">
-            </div>
-            <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png">
-            </div>
-            <div class="carousel-cell"><img class="screen" src="https://i.ibb.co/BGqc6sY/completed-no-frame-2.png">
-            </div>
+            <div class="carousel-cell"><img class="screen" id="proj_1_img_0"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_1_img_1"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_1_img_2"></div>
+               <div class="carousel-cell"><img class="screen" id="proj_1_img_3"></div>
+               <div class="carousel-cell"><img class="screen" id="proj_1_img_4"></div>
+               <div class="carousel-cell"><img class="screen" id="proj_1_img_5"></div>
+               <div class="carousel-cell"><img class="screen" id="proj_1_img_6"></div>
+
           </div>
         </div>
 
       </div>
+      <br>
+      <hr>
+    <!--Project 3-->
+    <div class="row">
+      <div class="col-6">
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_0"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_1"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_2"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_3"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_4"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_5"></div>
+          <div class="carousel-cell"><img class="screen" id="proj_2_img_6"></div>
+        </div>
+      </div>
+      <div class="col">
+         <h2 id='proj_2_name' class="project_name"></h3>
+        <p id='proj_2_detail'> Information about it</p>
+          <h3 class='proj_dev'>Technical Components of the App: </h4>
+          <p id='proj_2_dev'></p>
+          <div class='source'>
+            <button class="source-code" id="proj_2_url">
+              Source Code
+            </button>
+            </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!--Project 4-->
+      <div class="row">
+        <div class="col">
+            <h2 id='proj_3_name' class="project_name"></h3>
+          <p id='proj_3_detail'> Information about it</p>
+            <h3 class='proj_dev'>Technical Components of the App: </h4>
+          <p id='proj_3_dev'></p>
+          <div class='source'>
+          <button class="source-code" id="proj_3_url">
+            Source Code
+          </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_0"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_1"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_2"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_3"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_4"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_5"></div>
+            <div class="carousel-cell"><img class="screen" id="proj_3_img_6"></div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <hr>
     </div>
 
     <br>
   </div>
+  <!--FOOTER -->
   <div id="contact">
 
 
@@ -163,9 +220,9 @@
           <div class="row">
             <div class="col-md-6 item text">
               <h2>Kate Murray</h2>
-              <div class="col item social"><a id="footer_linkedin" aria-label="LinkedIn"><i
-                    class="icon ion-social-linkedin"></i></a><a id="footer_github" aria-label="GitHub"><i
-                    class="icon ion-social-github"></i></a><a id="footer_email" aria-label="Email"><i
+              <div class="col item social"><a id="footer_linkedin" aria-label="LinkedIn" aria-hidden="false"><i
+                    class="icon ion-social-linkedin"></i></a><a id="footer_github" aria-label="GitHub" aria-hidden="false"><i
+                    class="icon ion-social-github"></i></a><a id="footer_email" aria-label="Email" aria-hidden="false"><i
                     class="icon ion-email"></i></a> </div>
             </div>
             <div class="col-sm-6 col-md-3 item">
@@ -183,6 +240,9 @@
       </footer>
     </div>
   </div>
+  <!--Internal JS-->
+  <script src="js/details.js" type='module'></script>
+  <!--External JS-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -192,7 +252,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="js/details.js" type='module'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 </body>
 
