@@ -17,9 +17,23 @@ h1 {
   font-weight:300;
   letter-spacing: 2px;
   font-size:30px;
-  padding: 5px;
+
   color: #282d32;
 }
+h2 {
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:25px;
+  color: #282d32;
+}
+h3 {
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:22px;
+  color: #282d32;
+}
+
+
 .header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size:45px;
@@ -130,8 +144,10 @@ h1 {
   background-color:#282d32;
 }
 
-.footer-dark h2 {
+.footer-dark .name {
   margin-top:0;
+  color:#f0f9ff;
+  opacity: 0.8;
   margin-bottom:12px;
   margin-left: 25px;
   font-weight:bold;
@@ -162,6 +178,10 @@ h1 {
     text-align:center;
     padding-bottom:20px;
   }
+  .footer-dark ul {
+    width: 100%;
+  text-align: center;
+}
 }
 
 .footer-dark .item.text {
@@ -188,6 +208,10 @@ h1 {
     text-align:center;
     margin-top:20px;
   }
+  .footer-dark ul {
+    width: 100%;
+    text-align: center;
+}
 }
 
 .footer-dark .item.social > a {
@@ -207,6 +231,8 @@ h1 {
 .footer-dark .item.social > a:hover {
   opacity:1;
 }
+
+
 .source{
   width: 100%;
   margin-top: 30px;
