@@ -37,7 +37,7 @@ function populateProjects() {
 function addBiography(user) {
   let bio = "I enjoy developing high quality Android apps.\
   I have completed a Masters of Science (MSc) in Computing Science from University College Cork where I was second in a class of approximately 40 students. <br> For my undergraduate degree in Business Information Systems I received an innovation award for my final year project, a vegan checker android application. <br> <br> I was also recently involved in the following research which was published in the MDPI forecasting journal: ";
-  let technologies = "<b>Android: </b> Android Studio / Java / APIs/  Espresso & JUnit Tests / Services / Notifications / Graphics / Clean Architecture / Data Binding / Navigation Components ";
+  let technologies = "<b>Android: </b> Android Studio / Java / APIs/  Espresso & JUnit Tests / Services / Notifications / Graphics / Navigation Components ";
   user.addBiography(bio, technologies);
 
 }
