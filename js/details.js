@@ -1,6 +1,7 @@
 
 import Project from './project.js'
 import User from './user.js'
+
 window.onload = function() {
 
 
@@ -17,7 +18,9 @@ window.onload = function() {
   document.getElementById('tech').innerHTML = kateM.technologies;
   let projects = populateProjects();
   showImages(projects);
+
 };
+
 
 function populateProjects() {
 
@@ -38,7 +41,7 @@ function populateProjects() {
 
 function addBiography(user) {
   let bio = "I enjoy developing high quality Android apps.\
-  I have completed a Masters of Science (MSc) in Computing Science from University College Cork where I was second in a class of approximately 40 students. <br> For my undergraduate degree in Business Information Systems I received an innovation award for my final year project, a vegan checker android application. <br> <br> I was also recently involved in the following research which was published in the MDPI forecasting journal: ";
+  I have completed a Masters of Science (MSc) in Computing Science from University College Cork where I received a First Class Honours. <br> For my undergraduate degree in Business Information Systems I received an innovation award for my final year project, a vegan checker android application. <br> <br> I was also recently involved in the following research which was published in the MDPI forecasting journal: ";
   let technologies = "<b>Android: </b> Kotlin / Java / Remote APIs / Local Caching / Dependency Injection / Clean Architecture / Coroutines & Flows / View Binding / Espresso & JUnit Tests / Services / Notifications / Graphics ";
   user.addBiography(bio, technologies);
 
